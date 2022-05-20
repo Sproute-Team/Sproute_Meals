@@ -1,0 +1,115 @@
+.container{
+    background: #FA4B0C;
+    width: 70vw;
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+}
+
+form h1 {
+    margin-left: 4em;
+}
+
+.logo {
+    height: 70%;
+    margin-top: 15px;
+}
+
+.logo_container{
+    width: 40vw;
+    background: #FA4B0C;
+}
+.name{
+    display: flex;
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: 0.5em; 
+    border-bottom-right-radius: 100%;
+}
+
+.sprout {
+    color: #FA4B0C;
+}
+
+
+
+.icon{
+    padding: 5em;
+}
+.icon img{
+    height: 13em;
+}
+
+button{
+    width:8em;
+    height:3em;
+    background-color:#FA4B0C;
+    margin-left:4em;
+    border-radius:0.5em;
+    border-style:none;
+    font-weight: bold;
+}
+
+#email {
+    font-size: 20px;
+    font-weight: bolder;
+}
+#password {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+p{
+    margin-left:4em;
+    margin-bottom:1.2em;
+}
+
+.logIn{
+    text-decoration:none;
+    color:#FA4B0C;
+}
+
+.logIn:hover{
+    text-decoration: underline;
+}
+
+#reserved{
+    margin-bottom:1.8em;
+    margin-left: 12em;
+    color: rgba(0, 0, 0, 0.504);
+    width: 10em;
+} 
+
+.form_part{
+    background: white;
+    border: 1px solid black;
+    width: 30vw;
+    padding: 1em 2em;
+}
+.set{
+    display: flex;
+    flex-direction: column;
+    /* background: #000; */
+}
+.set label{
+    color: black;
+    padding: 0.5em;
+    font-weight: 200;
+}
+.set input{
+    padding: 1em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgba(241, 234, 234, 0.796);
+}
+.submit{
+    padding: 8px 30px;
+    margin: auto;
+    margin-left: 100px;
+    border-radius: 8px;
+    margin-top: 15px;
+    color: white;
+    background-color: #FA4B0C;
+}
