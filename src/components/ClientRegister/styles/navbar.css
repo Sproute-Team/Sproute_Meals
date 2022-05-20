@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+.navbar{
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    background-color: #F0F8FF;
+}
+.icons{
+    flex: 1;
+}
+.icons > a >img{
+    margin: auto 0  auto 20px;
+    width: 20px;
+}.icons > a >img:hover{
+    width: 30px;
+}
+#userIcon{
+    width: 20px;   
+    margin-left: 8px; 
+}
+#userIcon:hover{
+    width: 30px;    
+}
+#user{
+    margin-left: 10px;
+    margin-right: 0;
+}
+#bar{
+    margin: 25px 20px 0 10px;
+    width: 2.7px;
+}
