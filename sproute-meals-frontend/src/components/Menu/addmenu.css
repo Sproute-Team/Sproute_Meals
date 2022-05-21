@@ -1,0 +1,20 @@
+.the_menu>h1{
+    font-size:20px;
+    height:29px;
+    font-weight: bold;
+}
+.the_menu{
+    height:60px;
+    width:80px;
+}
+.the_menu p{
+    font-size:12px;
+    color:rgb(95, 94, 94); 
+}
+.buttons>button{
+    margin-left: 10px;
+}
+.buttons{
+    margin: 5px;
+    margin-left:30px;
+}

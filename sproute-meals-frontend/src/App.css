@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+::-webkit-scrollbar-thumb{
+  background: #fa4b0c;
+  border-radius: 12px;
+}
+.places{
+  display: grid;
+  grid-gap: 1em;
+  max-width: 60vw;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+.RenderMenu{
+  display: flex;
+  flex-direction: column;
+}
+.side_menu{
+  display: flex;
+  flex-direction: row;
+}
+.header_side_menu{
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  width:80%;
+}
+.menu_menuItems{
+  border:1px solid #FA4B0C;
+  border-radius: 15px;
+}
+.items-menu{
+  display: flex;
+  flex-direction: row;
+  width:80%;
+} 
