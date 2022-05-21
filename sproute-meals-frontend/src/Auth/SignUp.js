@@ -35,7 +35,7 @@ function SignUp() {
      <input type='text' placeholder="Phone" required />
      </div>
     <button className='btn submit' type="submit">Sign Up</button>
-     <p>Already have an account?<Link to ='/login' className='logIn'>Log In</Link></p>
+     <p className='para'>Already have an account?<Link to ='/login' className='logIn'>Log In</Link></p>
  </form>
 </div>
 </div>

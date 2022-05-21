@@ -27,7 +27,7 @@ function Login() {
                     <input type='password' placeholder="Password" required />
                 </div>
                 <button type="submit" class="submit">Login</button>
-                <p>All rights reserved 2022</p>
+                <p className='para'>All rights reserved 2022</p>
             </form>
         </div>
     </div>
