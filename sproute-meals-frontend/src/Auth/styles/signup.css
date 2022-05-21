@@ -1,25 +1,25 @@
 
 .container{
     background: #FA4B0C;
-    width: 70vw;
-    margin: auto;
-    margin-top: 2em;
+    width: 100vw;
+    height: 100vh;
     display: flex;
 }
 .logo_container{
-    width: 40vw;
+    width: 50vw;
     background: #FA4B0C;
 }
-.logo {
+/* .logo {
     height: 70%;
     margin-top: 15px;
-}
+} */
 .name{
     display: flex;
     background: white;
     color: black;
     font-weight: bold;
-    padding: 0.5em; 
+    padding: 1.5em;
+    width: 50%; 
     border-bottom-right-radius: 100%;
 }
 .sprout {
@@ -28,17 +28,19 @@
 
 
 form h1 {
-    margin-left: 4em;
+    color: black;
+    font-size:2em;
+    font-weight: bold;
 }
 
 .icon{
     padding: 5em;
 }
 .icon img{
-    height:18em;
+    height:25em;
 }
 
-p{
+.para{
     margin-left:4em;
     margin-bottom:1.2em;
 }
@@ -53,33 +55,27 @@ p{
 }
 
 #reserved{
-    margin-bottom:1.8em;
-    margin-left: 12em;
     color: rgba(0, 0, 0, 0.504);
     width: 10em;
+    background: hotpink;
 } 
 
 .form_part{
     background: white;
-    border: 1px solid black;
     width: 50vw;
-    padding: 1em 2em;
+    padding: 4em 5em;
 }
 .set{
     display: flex;
     flex-direction: column;
     /* background: #000; */
 }
-.set label{
-    color: black;
-    padding: 0.5em;
-    font-weight: 200;
-}
 .set input{
     padding: 1em;
     border: none;
     outline: none;
     border-radius: 10px;
+    width: 40vw;
     background: rgba(241, 234, 234, 0.796);
 }
 .submit{
