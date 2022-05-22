@@ -10,7 +10,7 @@ import RenderAll from "./Pages/RenderAll";
 import Clients from "./components/ClientPages/Clients";
 import Login from "./Auth/Login";
 import SignUp from "./Auth/SignUp";
-import HomeSection from "./components/Home/HomeSection";
+import HomeSection from "./components/Home/Home";
 import './App.css';
 
 function App() {

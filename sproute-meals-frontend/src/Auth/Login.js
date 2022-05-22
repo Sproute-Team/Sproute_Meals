@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles/index.css'
 import Logo from './styles/logo.png'
-import SignUp from './styles/signup.png'
+import login from './styles/login.svg'
 function Login() {
   return (
     <div class='container'>
@@ -12,7 +12,7 @@ function Login() {
                 <h1 class="meals">Meals</h1>
             </div>
             <div class='icon'>
-                <img src={`${SignUp}`} alt='signup'/>
+                <img src={`${login}`} alt='signup'/>
             </div>
         </div>
         <div class="form_part">
