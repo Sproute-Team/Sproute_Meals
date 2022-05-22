@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Sproute-Team/Sproute_Meals/home/static/css/main.1c7fb63d.css",
+    "main.js": "/Sproute-Team/Sproute_Meals/home/static/js/main.83d2f303.js",
+    "static/media/signup.png": "/Sproute-Team/Sproute_Meals/home/static/media/signup.5738c00baa77d98f2776.png",
+    "static/media/deliver.svg": "/Sproute-Team/Sproute_Meals/home/static/media/deliver.2ac4641f490e35027edebf4f0b230c10.svg",
+    "index.html": "/Sproute-Team/Sproute_Meals/home/index.html",
+    "main.1c7fb63d.css.map": "/Sproute-Team/Sproute_Meals/home/static/css/main.1c7fb63d.css.map",
+    "main.83d2f303.js.map": "/Sproute-Team/Sproute_Meals/home/static/js/main.83d2f303.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c7fb63d.css",
+    "static/js/main.83d2f303.js"
+  ]
+}
