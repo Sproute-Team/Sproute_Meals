@@ -2,7 +2,7 @@
     background-color: #FCEEEE;
     width: 40vw;
     height: 70vh;
-    padding-top:2em;
+    /* padding-top:2em; */
     border-radius: 12px;
 }
 ::placeholder{
@@ -13,22 +13,23 @@
     /* border: solid #FD4C3A ; */
     padding:  10px;
     border-radius: 10px;
-    margin:1em auto;
+    margin:0.8em auto;
     width: 80%;
     outline: none;
 }
-.inputstyle:hover{
-    transform: scale(1.1);
-    border: 2px solid white;
-}
-label{
-    padding-bottom: 10px;
-    margin-left: 10%;
+.inputstyle:focus{
+    outline: 1px solid #Fa4b0c;
 }
 .float > input{
     border:2px #FDFDFD solid;
     display: flex;
     /* background: #000; */
+}
+.label-form{ 
+    color:black;
+    /* background: #000; */
+    width: 100%;
+    padding-left: 4em;
 }
 #left{
     width: 20%;

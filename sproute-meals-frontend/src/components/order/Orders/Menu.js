@@ -9,7 +9,7 @@ function Menu() {
             <button className="btn border-2 border-solid border-[#FA4B0C] text-[#FA4B0C] p-4 px-14 rounded-xl">Appetizer</button>
             <button className="btn border-2 border-solid border-[#FA4B0C] text-[#FA4B0C] p-4 px-14 rounded-xl">Desert</button>
             <button className="btn border-2 border-solid border-[#FA4B0C] text-[#FA4B0C] p-4 px-14 rounded-xl">Main</button>
-        </div>
+    </div>
   )
 }
 

@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
+// import Navbar from "./Components/Navbar";
 import "./Landing.css";
 import LogoName from "../images/sprouteMeals.png"
-import LeftBar from "./Components/Leftbar";
+// import LeftBar from "./Components/Leftbar";
 import Middlemain from "./Components/Middlemain";
 
 
@@ -14,8 +14,8 @@ function Landing() {
                     <div className="m-0 p-0 box-border">
                         <img className="h-24" src={LogoName} alt="The logo name for sproute" />
                     </div>
-                    <Navbar />
-                    <LeftBar />
+                    {/* <Navbar />
+                    <LeftBar /> */}
                 </div>
                 <div className="main-down">
                     <Middlemain />

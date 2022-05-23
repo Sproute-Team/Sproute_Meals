@@ -15,39 +15,39 @@ function Client() {
                  <img src={`${SignUp}`} alt='signup'/>
              </div>
         </div>
-    <div className="form_part">
+    <div className="form_part overflow-y-scroll">
      <form>
          <h1>Client</h1>
          <div className="set">
-         <label id="username">Client</label>
+         <label id="username" className='labels'>Client</label>
          <input type='text' placeholder="Username" required/>
          </div>
          <div className="set">
-         <label id="email">Category</label>
+         <label id="email" className='labels'>Category</label>
          <input type='text' placeholder="Email Address" required />
          </div>
          <div className="set">
-         <label id="password">Representative</label>
+         <label id="password" className='labels'>Representative</label>
          <input type='password' placeholder="Password" required />
          </div>
          <div className="set">
-         <label id="phone">Date of Creation</label>
+         <label id="phone" className='labels'>Date of Creation</label>
          <input type='text' placeholder="Date of Creation" required />
          </div>
          <div className="set">
-            <label id="phone">Address</label>
+            <label id="phone" className='labels'>Address</label>
             <input type='text' placeholder="Address" required />
         </div>
         <div className="set">
-            <label id="phone">Email</label>
+            <label id="phone" className='labels'>Email</label>
             <input type='text' placeholder="Email" required />
         </div>
         <div className="set">
-            <label id="phone">Bank account(IBAN)</label>
+            <label id="phone" className='labels'>Bank account(IBAN)</label>
             <input type='text' placeholder="Bank account" required />
         </div>
          
-        <button type="submit" className="submit-btn">Add Client</button>
+        <button type="submit" className="submit">Add Client</button>
          
      </form>
     </div>

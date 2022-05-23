@@ -1,4 +1,4 @@
-import {FaSearch, FaEllipsisV ,FaPencilAlt,FaUsers, FaPlus} from "react-icons/fa";
+import {FaSearch, FaEllipsisV ,FaPencilAlt} from "react-icons/fa";
 import SideBar from '../order/Orders/SideBar';
 import ClientAdd from "./ClientAdd";
 import ClientHeader from "./ClientHeader";

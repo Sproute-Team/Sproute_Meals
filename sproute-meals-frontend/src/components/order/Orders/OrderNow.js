@@ -20,7 +20,7 @@ function OrderNow() {
         userDetailPhone :'0780918379'
     }]
     const [Orders,setOrders]= useState(dummyDatas);
-    console.log(Orders);
+    console.log('Orders',Orders);
   return (
       <>
     {Orders ? (Orders.map((order)=>(
