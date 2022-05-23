@@ -22,8 +22,11 @@ function SignUp() {
   const handleSubmit = (e) =>{
     e.preventDefault();
     const SignUpData = async () =>{
-      const PostData = await fetch('https://196.223.240.154:8099/supapp/api/auth/admin/signup',{
+      const PostData = await fetch('http://196.223.240.154:8099/supapp/api/auth/client/signup',{
       method : 'POST',
+      headers:{
+        'Content-Type':'application/json'
+      },
       body : JSON.stringify({
         email:email,
         firstName: username,
