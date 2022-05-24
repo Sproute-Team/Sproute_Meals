@@ -4,6 +4,8 @@ import Component2 from "../images/Component2.png";
 import Component3 from "../images/Component2a.png";
 import Component4 from "../images/Component3.png";
 import {Link} from 'react-router-dom'
+import { Slide } from "react-awesome-reveal";
+import { Bounce } from "react-awesome-reveal";
 const GetStarted = () => {
     return (
         <>
@@ -11,6 +13,7 @@ const GetStarted = () => {
                 <h1 className="m-auto w-fit text-2xl font-bold mt-5">Get Started</h1>
                 <p className="m-auto w-fit opacity-90">For free and get more revenues! For free and get more revenues! For free and get more revenues! </p>
             </div>
+            <Slide>
             <div className="flex flex-row mt-10">
                 <div className="grid grid-cols-2">
                     <div className=" bg-white hover:bg-[#FA4B0C] hover:text-white hover:cursor-pointer duration-300 rounded-md mx-10 my-5 p-10">
@@ -36,6 +39,7 @@ const GetStarted = () => {
                     <button className=" bg-[#FA4B0C] text-white p-4 rounded-lg font-semibold hover:bg-transparent hover:scale-75 hover:border-2 hover:border-solid duration-500 hover:border-[#FA4B0C] hover:text-[#FA4B0C] w-fit mx-auto px-6"><Link to='/login'>Get Started</Link></button>
                 </div>
             </div>
+            </Slide>
         </>
     )
 }
