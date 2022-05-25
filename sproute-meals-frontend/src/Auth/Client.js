@@ -1,8 +1,7 @@
 import React from 'react'
-import './styles/client.css'
-import Logo from './styles/logo.png'
-import SignUp from './styles/signup.png'
-import './styles.css';
+import './styles/client.css';
+import Logo from './styles/logo.png';
+import SignUp from './styles/signup.png';
 function Client() {
   return (
     <div className='container'>
