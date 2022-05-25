@@ -6,7 +6,7 @@ function ClientShowCase() {
 <div class="table-wrapper">
     <table class="fl-table">
         <thead>
-        <tr>
+        <tr className="heads">
             <th>Profile</th>
             <th>Full Name</th>
             <th>Email</th>
@@ -19,7 +19,7 @@ function ClientShowCase() {
         </thead>
         <tbody>
         <tr>
-            <td><img className='rounded-full w-12' src="https://i.pinimg.com/originals/26/8d/88/268d886c389d98db13c59da55c5dc789.jpg" alt="No" /></td>
+            <td className="roundd"><img className='rounded-full w-12 pro' src="https://i.pinimg.com/originals/26/8d/88/268d886c389d98db13c59da55c5dc789.jpg" alt="No" /></td>
             <td>Manzi Cedrick</td>
             <td>cedrickmanzi0@gmail.com</td>
             <td>Kigali,Rwanda</td>
@@ -30,7 +30,7 @@ function ClientShowCase() {
             <td><FaHamburger className='text-[#FA4B0C] cursor-pointer'/></td>        
         </tr>
         <tr>
-            <td><img className='rounded-full w-12' src="https://i.pinimg.com/originals/26/8d/88/268d886c389d98db13c59da55c5dc789.jpg" alt="No" /></td>
+            <td className="roundd"><img className='rounded-full w-12' src="https://i.pinimg.com/originals/26/8d/88/268d886c389d98db13c59da55c5dc789.jpg" alt="No" /></td>
             <td>Manzi Cedrick</td>
             <td>cedrickmanzi0@gmail.com</td>
             <td>Kigali,Rwanda</td>
@@ -41,7 +41,7 @@ function ClientShowCase() {
             <td><FaHamburger className='text-[#FA4B0C] cursor-pointer'/></td>        
         </tr>
         <tr>
-            <td><img className='rounded-full w-12' src="https://i.pinimg.com/originals/26/8d/88/268d886c389d98db13c59da55c5dc789.jpg" alt="No" /></td>
+            <td className="roundd"><img className='rounded-full w-12' src="https://i.pinimg.com/originals/26/8d/88/268d886c389d98db13c59da55c5dc789.jpg" alt="No" /></td>
             <td>Manzi Cedrick</td>
             <td>cedrickmanzi0@gmail.com</td>
             <td>Kigali,Rwanda</td>
@@ -52,7 +52,7 @@ function ClientShowCase() {
             <td><FaHamburger className='text-[#FA4B0C] cursor-pointer'/></td>        
         </tr>
         <tr>
-            <td><img className='rounded-full w-12' src="https://i.pinimg.com/originals/26/8d/88/268d886c389d98db13c59da55c5dc789.jpg" alt="No" /></td>
+            <td className="roundd"><img className='rounded-full w-12' src="https://i.pinimg.com/originals/26/8d/88/268d886c389d98db13c59da55c5dc789.jpg" alt="No" /></td>
             <td>Manzi Cedrick</td>
             <td>cedrickmanzi0@gmail.com</td>
             <td>Kigali,Rwanda</td>
