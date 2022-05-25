@@ -33,6 +33,7 @@ function Login() {
               setInfos([...userInfos,data]);
               let token = data.token.accessToken;
               setUserToken(token);
+              localStorage.setItem("token", token);
               if(token) {
                 navigate('/overview');
               }

@@ -3,8 +3,28 @@ import SideBar from '../order/Orders/SideBar';
 import ClientAdd from "./ClientAdd";
 import ClientHeader from "./ClientHeader";
 import ClientShowCase from "./ClientShowCase";
+import { ChatState } from '../../context/AppContext';
+import {useEffect} from 'react';
+
+
 import './styles.css';
 const Clients = () => {
+    const {user_token,setUserToken,userInfos,setInfos} = ChatState()
+    const token = localStorage.getItem("token");
+    console.log(token);
+    useEffect(()=>{
+      const getCLients = async ()=>{
+      const api = await fetch("http://196.223.240.154:8099/supapp/api/users",{
+            method: "GET", 
+            headers: {
+                Authorization: "Bearer "  + token
+            }
+        })
+    const data = await api.json()
+    console.log(data.contentx);
+    }
+    getCLients()
+    }, [])
     let clients=[
         {
            id:1,
@@ -95,7 +115,7 @@ const Clients = () => {
             <div className="block">
                 <ClientHeader/>
                 <ClientAdd/>
-                <ClientShowCase props={clients}/>
+                <ClientShowCase clients={clients}/>
             </div>
         </div>
     );
