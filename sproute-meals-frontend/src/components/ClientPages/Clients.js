@@ -95,7 +95,7 @@ const Clients = () => {
             <div className="block">
                 <ClientHeader/>
                 <ClientAdd/>
-                <ClientShowCase/>
+                <ClientShowCase props={clients}/>
             </div>
         </div>
     );
