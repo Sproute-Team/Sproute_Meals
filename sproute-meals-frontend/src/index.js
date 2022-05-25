@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import ChatProvider from './context/AppContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <ChatProvider>
     <App />
-  </React.StrictMode>
+  </ChatProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,5 +1,8 @@
-import {React, useState} from 'react'
+import {React,useEffect, useState} from 'react'
+import { ChatState } from '../../../context/AppContext'
+
 function OrderNow() {
+    const {user_token,setUserToken,userInfos,setInfos} = ChatState()
     const dummyDatas =[{
         orderNumber: 1,
         orderDate: new Date().toDateString(),
@@ -20,7 +23,19 @@ function OrderNow() {
         userDetailPhone :'0780918379'
     }]
     const [Orders,setOrders]= useState(dummyDatas);
-    console.log(Orders);
+    useEffect(()=>{
+        const getOrders = async ()=>{
+            const OrdersData = await fetch('http://196.223.240.154:8099/supapp/api/orders',{
+                method:'GET',
+                headers:{
+                    'Content-Type':'application/json',
+                    Authorization :'Bearer '+ user_token,
+                } 
+            })
+            console.log("Orders Data",OrdersData)
+        }
+        getOrders()
+    },[])
   return (
       <>
     {Orders ? (Orders.map((order)=>(

@@ -12,6 +12,7 @@ import Login from "./Auth/Login";
 import SignUp from "./Auth/SignUp";
 import HomeSection from "./components/Home/Home";
 import './App.css';
+import Client from "./Auth/Client";
 
 function App() {
   return (
@@ -19,8 +20,7 @@ function App() {
       <Routes>
           <Route path="/" element={<HomeSection/>}/>
           <Route path='/registerClient' element={<RenderAll/>}/>
-          {/* <Route path='/login' element={<LogIn/>}/>
-          <Route path='/signup' element={<SignUp/>}/> */}
+          <Route path='/addClient' element={<Client/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/signup' element={<SignUp/>}/>
           <Route path='/clients' element={<Clients/>}/>
