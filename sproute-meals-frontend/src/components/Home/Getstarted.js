@@ -5,7 +5,7 @@ import Component3 from "../images/Component2a.png";
 import Component4 from "../images/Component3.png";
 import {Link} from 'react-router-dom'
 import { Slide } from "react-awesome-reveal";
-import { Bounce } from "react-awesome-reveal";
+// import { Bounce } from "react-awesome-reveal";
 const GetStarted = () => {
     return (
         <>

@@ -1,11 +1,13 @@
 import {React,useState} from 'react'
 import {Link} from 'react-router-dom';
 import signUp from './styles/signup.png'
+import {useNavigate} from 'react-router-dom'
 import logo from './styles/logo.png'
 function SignUp() {
   const [username,setUsername] = useState('');
   const [password,setPassword] = useState('');
   const [email,setEmail] = useState('')
+  const navigate = useNavigate()
   const [telephone,setTelephone] = useState('')
   const getUsername=(e)=>{
     setUsername(e.target.value)
@@ -35,7 +37,10 @@ function SignUp() {
         password : password,
       })
     })
-    console.log('PostData',PostData);
+    const data = PostData.json();
+    if(data){
+      navigate('/login');
+    }
   }
     SignUpData()
     setEmail('')
@@ -74,7 +79,9 @@ function SignUp() {
             <label id="phone" className='labels'>Telephone</label>
             <input type='text' onChange={getTelephone} pattern="[0-9]+" value={telephone} placeholder="Telephone" required />
           </div>
-          <button className='btn submit' type="submit"><Link to='/login'>Sign Up</Link></button>
+          <button className='btn submit' type="submit">Sign Up</button>
+          <p className='para bottom-0'>All rights reserved 2022</p>
+                <p className='para bottom-6'>Already Have an Account <Link to='/login' className='text-blue-900'>Login</Link></p>
       </form>
       </div>
     </div>

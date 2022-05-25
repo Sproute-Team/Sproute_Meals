@@ -1,11 +1,15 @@
 import {React, useState} from 'react'
+import { useNavigate } from 'react-router-dom'
 import './styles/index.css'
 import Logo from './styles/logo.png'
 import {Link } from 'react-router-dom'
 import login from './styles/login.svg'
+import { ChatState } from '../context/AppContext'
 function Login() {
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('');
+    const navigate= useNavigate()
+    const {user_token,setUserToken,userInfos,setInfos} = ChatState()
     const getEmail =(e)=>{
         setEmail(e.target.value);
     }
@@ -20,14 +24,22 @@ function Login() {
                 headers:{
                   'Content-Type':'application/json'
                 },
-                body : JSON.stringify({
+                body: JSON.stringify({
                   login:email,
                   password : password,
                 })
               })
-              console.log('Login Data',PostData);
+              const data = await PostData.json();
+              setInfos([...userInfos,data]);
+              let token = data.token.accessToken;
+              setUserToken(token);
+              if(token) {
+                navigate('/overview');
+              }
         }
         LoginData()
+        setEmail('')
+        setPassword('')
     }
   return (
     <div className='container'>
@@ -44,15 +56,15 @@ function Login() {
         <div className="form_part">
             <form onSubmit={handleSubmit}>
                 <h1 className='pb-5 font-bold text-xl'>Login</h1>
-                <div class="set">
+                <div className="set">
                     <label id="email" className='labels'>Email</label>
                     <input type='email' onChange={getEmail} value={email} placeholder="Email Address" required />
                 </div>
-                <div class="set">
+                <div className="set">
                     <label id="password" className='labels'> Password</label>
-                    <input type='password' onChange={getPassword} value={password} placeholder="Password" required />
+                    <input type='text' onChange={getPassword} value={password} placeholder="Password" required />
                 </div>
-                <button type="submit" class="submit"><Link to='/overview'>Login</Link></button>
+                <button type="submit" className="submit">Login</button>
                 <p className='para bottom-0'>All rights reserved 2022</p>
                 <p className='para bottom-6'>Don't Have an Account <Link to='/signup' className='text-blue-900'>Sign Up</Link></p>
             </form>
