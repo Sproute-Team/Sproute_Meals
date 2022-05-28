@@ -3,10 +3,12 @@ import {Link} from 'react-router-dom';
 import signUp from './styles/signup.png'
 import {useNavigate} from 'react-router-dom'
 import logo from './styles/logo.png'
+import Loader from './Loader';
 function SignUp() {
   const [username,setUsername] = useState('');
   const [password,setPassword] = useState('');
   const [email,setEmail] = useState('')
+  const [showLoader,setLoader] = useState(false)
   const navigate = useNavigate()
   const [telephone,setTelephone] = useState('')
   const getUsername=(e)=>{
@@ -24,6 +26,7 @@ function SignUp() {
   const handleSubmit = (e) =>{
     e.preventDefault();
     const SignUpData = async () =>{
+      setLoader(true)
       const PostData = await fetch('http://196.223.240.154:8099/supapp/api/auth/client/signup',{
       method : 'POST',
       headers:{
@@ -39,7 +42,11 @@ function SignUp() {
     })
     const data = PostData.json();
     if(data){
+      setLoader(false)
       navigate('/login');
+    }
+    if(!data){
+      setLoader(false);
     }
   }
     SignUpData()
@@ -49,6 +56,8 @@ function SignUp() {
     setTelephone('')
   }
   return (
+    <>
+    {showLoader ? <Loader/> :
     <div className='container'>
       <div className='logo_container'>
           <div className='name'>
@@ -85,6 +94,8 @@ function SignUp() {
       </form>
       </div>
     </div>
+    }
+    </>
   )
 }
 

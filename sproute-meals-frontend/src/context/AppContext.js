@@ -4,8 +4,8 @@ const ChatContext = createContext();
 
 const ChatProvider = ({children}) =>{
     // const navigate = useNavigate()
-    const [user_token,setUserToken]=useState([]);
-    const [userInfos,setInfos] = useState([])
+    const [user_token,setUserToken]=useState('');
+    const [userInfos,setInfos] = useState()
     return <ChatContext.Provider value={{user_token,setUserToken,userInfos,setInfos}}>{children}</ChatContext.Provider>
 }
 export default ChatProvider;

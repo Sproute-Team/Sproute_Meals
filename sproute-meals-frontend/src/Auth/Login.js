@@ -5,9 +5,11 @@ import Logo from './styles/logo.png'
 import {Link } from 'react-router-dom'
 import login from './styles/login.svg'
 import { ChatState } from '../context/AppContext'
+import Loader from './Loader'
 function Login() {
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('');
+    const [showLoader,setLoader] = useState(false)
     const navigate= useNavigate()
     const {user_token,setUserToken,userInfos,setInfos} = ChatState()
     const getEmail =(e)=>{
@@ -19,6 +21,7 @@ function Login() {
     const handleSubmit=(e)=>{
         e.preventDefault();
         const LoginData = async ()=>{
+            setLoader(true)
             const PostData = await fetch('http://196.223.240.154:8099/supapp/api/auth/signin',{
                 method : 'POST',
                 headers:{
@@ -30,18 +33,23 @@ function Login() {
                 })
               })
               const data = await PostData.json();
-              setInfos([...userInfos,data]);
+              console.log("Data",data)
+              setInfos(data);
+              console.log("user Info in Login",userInfos)
               let token = data.token.accessToken;
               setUserToken(token);
               if(token) {
+                setLoader(false)
                 navigate('/overview');
               }
-        }
+            }
         LoginData()
         setEmail('')
         setPassword('')
     }
   return (
+    <>
+    {showLoader ? <Loader/> :
     <div className='container'>
         <div className='logo_container'>
             <div className='name'>
@@ -70,6 +78,8 @@ function Login() {
             </form>
         </div>
     </div>
+    }
+    </>
   )
 }
 

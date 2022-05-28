@@ -1,6 +1,6 @@
 {
   "name": "sprout-meals-frontend",
-  "homepage": "https://github.com/Sproute-Team/Sproute_Meals/home",
+  "homepage": "https://Sproute_Meals/home",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
