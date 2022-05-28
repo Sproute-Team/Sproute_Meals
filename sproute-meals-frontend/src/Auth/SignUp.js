@@ -89,8 +89,8 @@ function SignUp() {
             <input type='text' onChange={getTelephone} pattern="[0-9]+" value={telephone} placeholder="Telephone" required />
           </div>
           <button className='btn submit' type="submit">Sign Up</button>
-          <p className='para bottom-0'>All rights reserved 2022</p>
-                <p className='para bottom-6'>Already Have an Account <Link to='/login' className='text-blue-900'>Login</Link></p>
+          <p className='para text-[12px] bottom-0'>All rights reserved 2022</p>
+          <p className='para text-[14px] bottom-4'>Already Have an Account <Link to='/login' className='text-blue-900'>Login</Link></p>
       </form>
       </div>
     </div>

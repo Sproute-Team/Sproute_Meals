@@ -33,11 +33,9 @@ function Login() {
                 })
               })
               const data = await PostData.json();
-              console.log("Data",data)
               setInfos(data);
               console.log("user Info in Login",userInfos)
-              let token = data.token.accessToken;
-              setUserToken(token);
+              let token = data.token.accessToken
               if(token) {
                 setLoader(false)
                 navigate('/overview');
@@ -73,8 +71,8 @@ function Login() {
                     <input type='text' onChange={getPassword} value={password} placeholder="Password" required />
                 </div>
                 <button type="submit" className="submit">Login</button>
-                <p className='para bottom-0'>All rights reserved 2022</p>
-                <p className='para bottom-6'>Don't Have an Account <Link to='/signup' className='text-blue-900'>Sign Up</Link></p>
+                <p className='para  text-[12px]  bottom-0'>All rights reserved 2022</p>
+                <p className='para  text-[14px]  bottom-6'>Don't Have an Account <Link to='/signup' className='text-blue-900'>Sign Up</Link></p>
             </form>
         </div>
     </div>
