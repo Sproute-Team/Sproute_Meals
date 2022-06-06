@@ -1,19 +1,18 @@
 .menu_section{
     display: flex;
     flex-direction: row;
-    width:100%;
+    width:100vw;
 }
 .menu{
     margin:10px;
     margin-left: 135px;
     display: flex;
-    width:70%;
+    width:90%;
     flex-direction: column;
     margin-top:0.5em;;
     overflow-y: scroll;
     scroll-behavior: smooth;
     height:70vh;
-    
 }
 .menu::-webkit-scrollbar{
     display: none;
@@ -22,10 +21,10 @@
     background-color: rgba(117, 83, 64, 0.13);
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 90%;
     margin: 0px 0px 20px 20px;
-    /* border:1px solid rgba(117, 83, 64, 0.13); */
     border-radius: 10px;
+    padding: 1em 0em;
 }
 .menu_1>div{
     padding:2px 2px 2px 2px;
@@ -40,7 +39,7 @@ img{
 }
 .details>span{
     color:#fa4b0c;
-    font-size: 17px;
+    font-size: 14px;
     font-family: sans-serif;
 }
 .details>h1{
@@ -49,7 +48,7 @@ img{
     font-family:sans-serif;
 }
 .details h4{
-    font-size:13px;
+    font-size:10px;
 }
 .more{
     padding:10px;

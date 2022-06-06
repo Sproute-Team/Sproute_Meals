@@ -6,6 +6,7 @@ import {Link } from 'react-router-dom'
 import login from './styles/login.svg'
 import { ChatState } from '../context/AppContext'
 import Loader from './Loader'
+import Cookies from 'js-cookie'
 function Login() {
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('');
@@ -20,6 +21,7 @@ function Login() {
     }
     const handleSubmit=(e)=>{
         e.preventDefault();
+        let auth_token;
         const LoginData = async ()=>{
             setLoader(true)
             const PostData = await fetch('http://196.223.240.154:8099/supapp/api/auth/signin',{
@@ -34,11 +36,19 @@ function Login() {
               })
               const data = await PostData.json();
               setInfos(data);
-              console.log("user Info in Login",userInfos)
+              console.log(data);
+              
               let token = data.token.accessToken
               if(token) {
                 setLoader(false)
                 navigate('/overview');
+                auth_token= Cookies.set('token', token,{expires : 7});
+                const tokens= Cookies.get('token', token);
+                console.log("The Token is: ",tokens)
+              }
+              if(!token){
+                setLoader(false)
+                navigate('/login');
               }
             }
         LoginData()

@@ -73,15 +73,15 @@ function SignUp() {
       <form>
           <h1 className="pb-3 font-bold text-xl">Sign Up</h1>
           <div className="set">
-            <label id="username" className='labels'>Username</label>
+            <label id="username" className='labels'>Username <label className='text-red-600'>*</label> </label>
             <input type='text' onChange={getUsername} value={username} placeholder="Username" required/>
           </div>
           <div className="set">
-            <label id="email" className='labels'>Email</label>
+            <label id="email" className='labels'>Email <label className='text-red-600'>*</label> </label>
             <input type='email' onChange={getEmail} value={email} placeholder="Email Address" required />
           </div>
           <div className="set">
-            <label id="password" className='labels'> Password</label>
+            <label id="password" className='labels'>Password <label className='text-red-600'>*</label> </label>
             <input type='password' onChange={getPassword} value={password} placeholder="Password" required />
           </div>
           <div className="set">
