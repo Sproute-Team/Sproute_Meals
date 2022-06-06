@@ -8,7 +8,7 @@ function ClientHeader() {
             <div className="flex gap-4">
                 <div className="sach"><FaSearch/></div>
                 <div className="border-r-2 pr-2 h-6 border-black border-solid md:w-10 bell"><FaBell/></div>
-                <span class="heading">Manzi Cedric</span>
+                <span className="heading">Manzi Cedric</span>
                 <div className="rounded-full flex place-items-center -translate-y-2 justify-center w-12 h-10">
                     <img className="h-full w-full rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnkNM-Jpk_jOoiMPxd9RMXmPPjf7mXI0Mxc-E5i95YX8sP6whkwwy_ZX_6-7x_tEujLQY&usqp=CAU" alt="" />
                 </div>

@@ -23,9 +23,9 @@ const MenuItems = ()=>{
     },[])
     return (
         <div className="menu_section">
-        <div className="menu" key={menu.id}>
+        <div className="menu" >
         {menu.map((menu)=>(
-            <div className="menu_1">
+            <div className="menu_1" key={menu.id}>
                 <div className="image">
                     <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJpbmtzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400" alt="drinks"/>
                 </div>

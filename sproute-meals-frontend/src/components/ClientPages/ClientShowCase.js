@@ -1,11 +1,28 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import {FaPencilAlt, FaHamburger } from 'react-icons/fa'
+import Cookies from 'js-cookie'
 function ClientShowCase() {
-    
+    const [clients,setClients]=useState([])
+    useEffect(()=>{
+        const getClients = async ()=>{
+            const user_tokens = Cookies.get('token');
+            const ClientsData = await fetch('http://196.223.240.154:8099/supapp/api/users',{
+                method:'GET',
+                headers:{
+                    'Content-Type':'application/json',
+                    Authorization :`Bearer ${user_tokens}`,
+                } 
+            })
+            let ClientUpdate = await ClientsData.json()
+            setClients(ClientUpdate.content);
+            console.log(ClientUpdate.content);
+        }
+        getClients()
+    },[])
   return (
       <>
-<div class="table-wrapper">
-    <table class="fl-table">
+<div className="table-wrapper">
+    <table className="fl-table">
         <thead>
         <tr className="heads">
             <th>Profile</th>
@@ -19,10 +36,11 @@ function ClientShowCase() {
         </tr>
         </thead>
         <tbody>
-        <tr>
+        {clients.map((client) =>(
+        <tr key={client.id}>
             <td className="roundd"><img className='rounded-full w-12 pro' src="https://i.pinimg.com/originals/26/8d/88/268d886c389d98db13c59da55c5dc789.jpg" alt="No" /></td>
-            <td>Manzi Cedrick</td>
-            <td>cedrickmanzi0@gmail.com</td>
+            <td>{client.firstName}</td>
+            <td>{client.email}</td>
             <td>Kigali,Rwanda</td>
             <td>10 Orders</td>
             <td>$800,000-$1000,000</td>
@@ -30,39 +48,7 @@ function ClientShowCase() {
             <td><FaPencilAlt className='text-[#FA4B0C] cursor-pointer'/></td>    
             <td><FaHamburger className='text-[#FA4B0C] cursor-pointer'/></td>        
         </tr>
-        <tr>
-            <td className="roundd"><img className='rounded-full w-12' src="https://i.pinimg.com/originals/26/8d/88/268d886c389d98db13c59da55c5dc789.jpg" alt="No" /></td>
-            <td>Manzi Cedrick</td>
-            <td>cedrickmanzi0@gmail.com</td>
-            <td>Kigali,Rwanda</td>
-            <td>10 Orders</td>
-            <td>$800,000-$1000,000</td>
-            <td>+250 0780918379</td>
-            <td><FaPencilAlt className='text-[#FA4B0C] cursor-pointer'/></td>    
-            <td><FaHamburger className='text-[#FA4B0C] cursor-pointer'/></td>        
-        </tr>
-        <tr>
-            <td className="roundd"><img className='rounded-full w-12' src="https://i.pinimg.com/originals/26/8d/88/268d886c389d98db13c59da55c5dc789.jpg" alt="No" /></td>
-            <td>Manzi Cedrick</td>
-            <td>cedrickmanzi0@gmail.com</td>
-            <td>Kigali,Rwanda</td>
-            <td>10 Orders</td>
-            <td>$800,000-$1000,000</td>
-            <td>+250 0780918379</td>
-            <td><FaPencilAlt className='text-[#FA4B0C] cursor-pointer'/></td>    
-            <td><FaHamburger className='text-[#FA4B0C] cursor-pointer'/></td>        
-        </tr>
-        <tr>
-            <td className="roundd"><img className='rounded-full w-12' src="https://i.pinimg.com/originals/26/8d/88/268d886c389d98db13c59da55c5dc789.jpg" alt="No" /></td>
-            <td>Manzi Cedrick</td>
-            <td>cedrickmanzi0@gmail.com</td>
-            <td>Kigali,Rwanda</td>
-            <td>10 Orders</td>
-            <td>$800,000-$1000,000</td>
-            <td>+250 0780918379</td>
-            <td><FaPencilAlt className='text-[#FA4B0C] cursor-pointer'/></td>    
-            <td><FaHamburger className='text-[#FA4B0C] cursor-pointer'/></td>        
-        </tr>
+        ))}
         </tbody>
     </table>
 </div>

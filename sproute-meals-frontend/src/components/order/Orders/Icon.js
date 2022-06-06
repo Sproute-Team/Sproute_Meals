@@ -1,9 +1,16 @@
+import Cookies from 'js-cookie';
 import {React,useState} from 'react'
+import { useNavigate } from 'react-router-dom';
 import {FaChartPie,FaAd,FaUserAlt, FaSignOutAlt ,FaGlassCheers } from 'react-icons/fa'
 import {Link } from 'react-router-dom'
 // import RenderOverview from '../../RenderOverview'
 function Icon() {
   const [showactive,setShowActive] = useState(false);
+  const navigate=useNavigate()
+  const handleLogout = ()=>{
+    Cookies.remove('token');
+    navigate('/login');
+  }
   const StyleActiveLink=(path)=>{
     if(path === window.location.pathname){
      return "border-l-[6px] text-[#FA4B0C] border-solid border-[#FA4B0C] bg-slate-700";
@@ -36,7 +43,7 @@ function Icon() {
     <div className={`flex mt-[15em] text-white  hover:cursor-pointer gap-4 p-4 px-10 sidee`}>
     <FaGlassCheers className='text-xl'/><span className='text-[14px]'>Settings</span>
     </div>
-    <div className={`flex text-white hover:cursor-pointer gap-4 mt-2 p-4 px-10 sidee`}>
+    <div className={`flex text-white hover:cursor-pointer gap-4 mt-2 p-4 px-10 sidee`} onClick={handleLogout}>
     <FaSignOutAlt className='text-xl'/><span className='text-[14px] sidee'>Log Out</span>
     </div>
     </>

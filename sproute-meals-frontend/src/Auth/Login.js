@@ -73,11 +73,11 @@ function Login() {
             <form onSubmit={handleSubmit}>
                 <h1 className='pb-5 font-bold text-xl'>Login</h1>
                 <div className="set">
-                    <label id="email" className='labels'>Email</label>
+                    <label id="email" className='labels'>Email <label className='text-red-600'>*</label> </label>
                     <input type='email' onChange={getEmail} value={email} placeholder="Email Address" required />
                 </div>
                 <div className="set">
-                    <label id="password" className='labels'> Password</label>
+                    <label id="password" className='labels'>Password <label className='text-red-600'>*</label> </label>
                     <input type='text' onChange={getPassword} value={password} placeholder="Password" required />
                 </div>
                 <button type="submit" className="submit">Login</button>

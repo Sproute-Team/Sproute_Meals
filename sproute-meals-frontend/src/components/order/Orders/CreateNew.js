@@ -10,27 +10,27 @@ function CreateNew() {
     </div>
     <p className="text-[rgba(0,0,0,0.4)] text-[12px] font-bold pb-5 px-10">Create New</p>
     <div className='flex border-2 border-solid w-full  border-[#00000015] justify-around pl-5 py-5'>
-    <svg width="17" height="18" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 27C20.4432 27 26 21.1392 26 14C26 6.86084 20.4432 1 13.5 1C6.55676 1 1 6.86084 1 14C1 21.1392 6.55676 27 13.5 27Z" stroke="black" stroke-opacity="0.5" stroke-width="2"/></svg>
+    <svg width="17" height="18" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 27C20.4432 27 26 21.1392 26 14C26 6.86084 20.4432 1 13.5 1C6.55676 1 1 6.86084 1 14C1 21.1392 6.55676 27 13.5 27Z" stroke="black" strokeOpacity="0.5" strokeWidth="2"/></svg>
     <span className="font-bold text-black">Restaurants</span>
     <button className="btn bg-[#FA4B0C] border-2 border-solid border-[#FA4B0C] text-[white] p-[0.2em] px-5 mr-2 rounded-xl">New</button>
     </div>
     <div className='flex border-2 border-solid w-full  border-[#00000015] justify-around pl-5 py-5'>
-    <svg width="17" height="18" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 27C20.4432 27 26 21.1392 26 14C26 6.86084 20.4432 1 13.5 1C6.55676 1 1 6.86084 1 14C1 21.1392 6.55676 27 13.5 27Z" stroke="black" stroke-opacity="0.5" stroke-width="2"/></svg>
+    <svg width="17" height="18" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 27C20.4432 27 26 21.1392 26 14C26 6.86084 20.4432 1 13.5 1C6.55676 1 1 6.86084 1 14C1 21.1392 6.55676 27 13.5 27Z" stroke="black" strokeOpacity="0.5" strokeWidth="2"/></svg>
     <span className="font-bold text-black">Restaurants</span>
     <button className="btn bg-[#FA4B0C] border-2 border-solid border-[#FA4B0C] text-[white] p-[0.2em] px-5 mr-2 rounded-xl">New</button>
     </div>
     <div className='flex border-2 border-solid w-full  border-[#00000015] justify-around pl-5 py-5'>
-    <svg width="17" height="18" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 27C20.4432 27 26 21.1392 26 14C26 6.86084 20.4432 1 13.5 1C6.55676 1 1 6.86084 1 14C1 21.1392 6.55676 27 13.5 27Z" stroke="black" stroke-opacity="0.5" stroke-width="2"/></svg>
+    <svg width="17" height="18" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 27C20.4432 27 26 21.1392 26 14C26 6.86084 20.4432 1 13.5 1C6.55676 1 1 6.86084 1 14C1 21.1392 6.55676 27 13.5 27Z" stroke="black" strokeOpacity="0.5" strokeWidth="2"/></svg>
     <span className="font-bold text-black">Restaurants</span>
     <button className="btn bg-[#FA4B0C] border-2 border-solid border-[#FA4B0C] text-[white] p-[0.2em] px-5 mr-2 rounded-xl">New</button>
     </div>
     <div className='flex border-2 border-solid w-full  border-[#00000015] justify-around pl-5 py-5'>
-    <svg width="17" height="18" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 27C20.4432 27 26 21.1392 26 14C26 6.86084 20.4432 1 13.5 1C6.55676 1 1 6.86084 1 14C1 21.1392 6.55676 27 13.5 27Z" stroke="black" stroke-opacity="0.5" stroke-width="2"/></svg>
+    <svg width="17" height="18" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 27C20.4432 27 26 21.1392 26 14C26 6.86084 20.4432 1 13.5 1C6.55676 1 1 6.86084 1 14C1 21.1392 6.55676 27 13.5 27Z" stroke="black" strokeOpacity="0.5" strokeWidth="2"/></svg>
     <span className="font-bold text-black">Restaurants</span>
     <button className="btn bg-[#FA4B0C] border-2 border-solid border-[#FA4B0C] text-[white] p-[0.2em] px-5 mr-2 rounded-xl">New</button>
     </div>
     <div className='flex border-2 border-solid w-full  border-[#00000015] justify-around pl-5 py-5'>
-    <svg width="17" height="18" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 27C20.4432 27 26 21.1392 26 14C26 6.86084 20.4432 1 13.5 1C6.55676 1 1 6.86084 1 14C1 21.1392 6.55676 27 13.5 27Z" stroke="black" stroke-opacity="0.5" stroke-width="2"/></svg>
+    <svg width="17" height="18" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 27C20.4432 27 26 21.1392 26 14C26 6.86084 20.4432 1 13.5 1C6.55676 1 1 6.86084 1 14C1 21.1392 6.55676 27 13.5 27Z" stroke="black" strokeOpacity="0.5" strokeWidth="2"/></svg>
     <span className="font-bold text-black">Restaurants</span>
     <button className="btn bg-[#FA4B0C] border-2 border-solid border-[#FA4B0C] text-[white] p-[0.2em] px-5 mr-2 rounded-xl">New</button>
     </div>

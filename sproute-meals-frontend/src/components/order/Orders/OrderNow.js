@@ -36,12 +36,11 @@ function OrderNow() {
                 } 
             })
             const data =await OrdersData.json()
-            // console.log("Orders Data Content",await data.content)
             setOrd(data.content)
         }
         getOrders()
-    },[])
-    console.log("Order Data",Ord)
+        console.log("Order Data",Ord)
+    },[Orders])
     return (
       <>
     {Ord ? (Ord.map((order)=>(
