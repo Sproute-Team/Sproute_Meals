@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaPencilAlt, FaHamburger } from 'react-icons/fa'
 function ClientShowCase() {
+    
   return (
       <>
 <div class="table-wrapper">

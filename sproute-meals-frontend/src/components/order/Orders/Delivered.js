@@ -27,11 +27,11 @@ function Delivered() {
                <img src={DeliveryBlog} alt="" className='w-[18em] h-[10em] p-[2em]' />
                </Bounce>
             </div>
-            <div className='text-[12px] mb-2 px-10 text-center'>
+            <div className='text-[12px] mb-4 px-10 text-center'>
             <span className='text-white'>Welcome to Sproute Meals! We're so excited to have you as part of our team. We're glad you've chosen us, and we want to show our appreciation by giving you a special incentive. We're delighted to have you as our customer.</span>
             </div>
             <div className='m-auto flex justify-center'>
-            <button className='p-4 px-10 border-white rounded-xl text-white hover:bg-white hover:text-[#FA4b0c]  duration-400 border-2 border-solid'>Start Delivering Now</button>
+            <button className='p-4 px-10 border-white rounded-xl text-[#FA4b0c] bg-white hover:bg-transparent hover:text-[white]  duration-700 border-2 border-solid'>Start Delivering Now</button>
             </div>
             </div>
         </div>
