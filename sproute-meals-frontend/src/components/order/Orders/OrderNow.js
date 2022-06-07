@@ -39,7 +39,6 @@ function OrderNow() {
             setOrd(data.content)
         }
         getOrders()
-        console.log("Order Data",Ord)
     },[Orders])
     return (
       <>

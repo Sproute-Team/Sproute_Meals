@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie';
 import {React,useState} from 'react'
 import { useNavigate } from 'react-router-dom';
-import {FaChartPie,FaAd,FaUserAlt, FaSignOutAlt ,FaGlassCheers } from 'react-icons/fa'
+import {FaChartPie,FaAd,FaUserAlt, FaSignOutAlt , FaClipboardCheck , FaAssistiveListeningSystems , FaCartPlus } from 'react-icons/fa'
 import {Link } from 'react-router-dom'
 // import RenderOverview from '../../RenderOverview'
 function Icon() {
@@ -27,7 +27,7 @@ function Icon() {
     </Link>
     <Link to='/orders'>
     <div className={`flex text-white ${StyleActiveLink("/orders")} hover:cursor-pointer gap-4 mt-2 p-4 px-10 sidee`} onClick={()=>setShowActive(true)}>
-    <FaGlassCheers className='text-xl'/><span className='text-[14px] sidee'>Orders</span>
+    <FaCartPlus className='text-xl'/><span className='text-[14px] sidee'>Orders</span>
     </div>
     </Link>
     <Link to='/clients'>
@@ -37,11 +37,11 @@ function Icon() {
     </Link>
     <Link to='/menu'>
     <div className={`flex text-white ${StyleActiveLink("/menu")} hover:cursor-pointer gap-4 mt-2 p-4 px-10 sidee`}>
-    <FaAd className='text-xl'/><span className='text-[14px] sidee'>Menu</span>
+    <FaClipboardCheck className='text-xl'/><span className='text-[14px] sidee'>Menu</span>
     </div>
     </Link>
     <div className={`flex mt-[15em] text-white  hover:cursor-pointer gap-4 p-4 px-10 sidee`}>
-    <FaGlassCheers className='text-xl'/><span className='text-[14px]'>Settings</span>
+    <FaAssistiveListeningSystems className='text-xl'/><span className='text-[14px]'>Settings</span>
     </div>
     <div className={`flex text-white hover:cursor-pointer gap-4 mt-2 p-4 px-10 sidee`} onClick={handleLogout}>
     <FaSignOutAlt className='text-xl'/><span className='text-[14px] sidee'>Log Out</span>

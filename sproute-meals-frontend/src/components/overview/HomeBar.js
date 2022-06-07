@@ -24,19 +24,19 @@ function HomeBar() {
             </div>
             <div className="flex gap-2">
             <div className='flex pt-6'>
-                <svg width="8" height="5" viewBox="0 0 80 5" fill="none" xmlns="http://www.w3.org/800/svg"><line x1="80" y1="2.54492" y2="2.54492" stroke="black" stroke-width="4"/></svg>
+                <svg width="8" height="5" viewBox="0 0 80 5" fill="none" xmlns="http://www.w3.org/800/svg"><line x1="80" y1="2.54492" y2="2.54492" stroke="black" strokeWidth="4"/></svg>
                 <span className="text-[#FA4B0C] text-sm -translate-y-2">Table 1</span>
-                <svg width="8" height="5" viewBox="0 0 80 5" fill="none" xmlns="http://www.w3.org/800/svg"><line x1="80" y1="2.54492" y2="2.54492" stroke="black" stroke-width="4"/></svg>
+                <svg width="8" height="5" viewBox="0 0 80 5" fill="none" xmlns="http://www.w3.org/800/svg"><line x1="80" y1="2.54492" y2="2.54492" stroke="black" strokeWidth="4"/></svg>
             </div>
             <div className='flex  pt-6'>
-                <svg width="8" height="5" viewBox="0 0 80 5" fill="none" xmlns="http://www.w3.org/800/svg"><line x1="80" y1="2.54492" y2="2.54492" stroke="black" stroke-width="4"/></svg>
+                <svg width="8" height="5" viewBox="0 0 80 5" fill="none" xmlns="http://www.w3.org/800/svg"><line x1="80" y1="2.54492" y2="2.54492" stroke="black" strokeWidth="4"/></svg>
                 <span className="text-[#FA4B0C] text-sm -translate-y-2">Table 1</span>
-                <svg width="8" height="5" viewBox="0 0 80 5" fill="none" xmlns="http://www.w3.org/800/svg"><line x1="80" y1="2.54492" y2="2.54492" stroke="black" stroke-width="4"/></svg>
+                <svg width="8" height="5" viewBox="0 0 80 5" fill="none" xmlns="http://www.w3.org/800/svg"><line x1="80" y1="2.54492" y2="2.54492" stroke="black" strokeWidth="4"/></svg>
             </div>
             <div className='flex pt-6'>
-                <svg width="8" height="5" viewBox="0 0 80 5" fill="none" xmlns="http://www.w3.org/800/svg"><line x1="80" y1="2.54492" y2="2.54492" stroke="black" stroke-width="4"/></svg>
+                <svg width="8" height="5" viewBox="0 0 80 5" fill="none" xmlns="http://www.w3.org/800/svg"><line x1="80" y1="2.54492" y2="2.54492" stroke="black" strokeWidth="4"/></svg>
                 <span className="text-[#FA4B0C] text-sm -translate-y-2">Table 1</span>
-                <svg width="8" height="5" viewBox="0 0 80 5" fill="none" xmlns="http://www.w3.org/800/svg"><line x1="80" y1="2.54492" y2="2.54492" stroke="black" stroke-width="4"/></svg>
+                <svg width="8" height="5" viewBox="0 0 80 5" fill="none" xmlns="http://www.w3.org/800/svg"><line x1="80" y1="2.54492" y2="2.54492" stroke="black" strokeWidth="4"/></svg>
             </div>
             </div>
         </div>

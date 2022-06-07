@@ -44,7 +44,7 @@ function ClientShowCase() {
             <td>Kigali,Rwanda</td>
             <td>10 Orders</td>
             <td>$800,000-$1000,000</td>
-            <td>+250 0780918379</td>
+            <td>{client.mobile}</td>
             <td><FaPencilAlt className='text-[#FA4B0C] cursor-pointer'/></td>    
             <td><FaHamburger className='text-[#FA4B0C] cursor-pointer'/></td>        
         </tr>

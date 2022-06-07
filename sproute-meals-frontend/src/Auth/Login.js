@@ -36,15 +36,12 @@ function Login() {
               })
               const data = await PostData.json();
               setInfos(data);
-              console.log(data);
-              
               let token = data.token.accessToken
               if(token) {
                 setLoader(false)
                 navigate('/overview');
-                auth_token= Cookies.set('token', token,{expires : 7});
-                const tokens= Cookies.get('token', token);
-                console.log("The Token is: ",tokens)
+                auth_token = Cookies.set('token',token,{expires : 7});
+                Cookies.set('user',userInfos);
               }
               if(!token){
                 setLoader(false)
