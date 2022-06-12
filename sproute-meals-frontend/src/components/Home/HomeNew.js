@@ -38,7 +38,7 @@ function HomeNew() {
     </div>
     </div>
     <div className='w-[60vh] px-10 mx-[3em] rounded-full h-[50vh] bg-[#FA4B0C]'>
-
+        <img src="" alt="" />
     </div>
     </div>
     </>
