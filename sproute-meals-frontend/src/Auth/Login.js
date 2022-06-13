@@ -42,6 +42,7 @@ function Login() {
                 navigate('/overview');
                 auth_token = Cookies.set('token',token,{expires : 7});
                 Cookies.set('user',userInfos);
+                setUserToken(token);
               }
               if(!token){
                 setLoader(false)

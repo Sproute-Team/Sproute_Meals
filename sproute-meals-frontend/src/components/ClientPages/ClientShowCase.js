@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import {FaPencilAlt, FaHamburger, FaEllipsisV } from 'react-icons/fa'
 import Cookies from 'js-cookie'
+import './styles.css'
 function ClientShowCase() {
     const [clients,setClients]=useState([])
     useEffect(()=>{
@@ -51,13 +52,7 @@ function ClientShowCase() {
         ))}
         </tbody>
     </table>
-    {/* <div className='bg-slate-800 absolute right-2'>
-        <ul>
-            <li>Update</li>
-            <li>Update</li>
-            <li>Details</li>
-        </ul>
-    </div> */}
+    
 </div>
 </>
   )
