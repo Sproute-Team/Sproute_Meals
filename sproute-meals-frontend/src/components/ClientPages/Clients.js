@@ -21,7 +21,7 @@ const Clients = () => {
             }
         })
     const data = await api.json()
-    console.log(data.contentx);
+    console.log(data.content);
     }
     getCLients()
     }, [])
