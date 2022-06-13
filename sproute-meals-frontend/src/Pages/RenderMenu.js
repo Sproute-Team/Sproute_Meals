@@ -8,15 +8,6 @@ import AllMenu from '../components/Menu/AllMenu';
 
 function RenderMenu() {
   return (
-    // <div className="">
-    // <div className=''><SideBar/>
-    // <div className=''><Header/>
-    // <div className=''><Menu/>
-    // <div className=''><MenuItems/></div>
-    // </div>
-    // </div>
-    // </div>
-    // </div>
     <div className='flex'>
       <SideBar/>
       <AllMenu/>
