@@ -13,6 +13,7 @@ import SignUp from "./Auth/SignUp";
 import HomeSection from "./components/Home/Home";
 import './App.css';
 import Client from "./Auth/Client";
+import HomeNew from "./components/Home/HomeNew";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/menu' element={<RenderMenu/>}/>
           <Route path="/orders" element={<RenderOrder/>}/>
           <Route path="/overview" element={<RenderOverview/>}/>
+          <Route path="/goodFood" element={<HomeNew/>}/>
       </Routes>
     </BrowserRouter>
   );

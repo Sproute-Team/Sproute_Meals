@@ -3,10 +3,12 @@ import {Link} from 'react-router-dom';
 import signUp from './styles/signup.png'
 import {useNavigate} from 'react-router-dom'
 import logo from './styles/logo.png'
+import Loader from './Loader';
 function SignUp() {
   const [username,setUsername] = useState('');
   const [password,setPassword] = useState('');
   const [email,setEmail] = useState('')
+  const [showLoader,setLoader] = useState(false)
   const navigate = useNavigate()
   const [telephone,setTelephone] = useState('')
   const getUsername=(e)=>{
@@ -24,6 +26,7 @@ function SignUp() {
   const handleSubmit = (e) =>{
     e.preventDefault();
     const SignUpData = async () =>{
+      setLoader(true)
       const PostData = await fetch('http://196.223.240.154:8099/supapp/api/auth/client/signup',{
       method : 'POST',
       headers:{
@@ -39,7 +42,11 @@ function SignUp() {
     })
     const data = PostData.json();
     if(data){
+      setLoader(false)
       navigate('/login');
+    }
+    if(!data){
+      setLoader(false);
     }
   }
     SignUpData()
@@ -49,6 +56,8 @@ function SignUp() {
     setTelephone('')
   }
   return (
+    <>
+    {showLoader ? <Loader/> :
     <div className='container'>
       <div className='logo_container'>
           <div className='name'>
@@ -64,15 +73,15 @@ function SignUp() {
       <form>
           <h1 className="pb-3 font-bold text-xl">Sign Up</h1>
           <div className="set">
-            <label id="username" className='labels'>Username</label>
+            <label id="username" className='labels'>Username <label className='text-red-600'>*</label> </label>
             <input type='text' onChange={getUsername} value={username} placeholder="Username" required/>
           </div>
           <div className="set">
-            <label id="email" className='labels'>Email</label>
+            <label id="email" className='labels'>Email <label className='text-red-600'>*</label> </label>
             <input type='email' onChange={getEmail} value={email} placeholder="Email Address" required />
           </div>
           <div className="set">
-            <label id="password" className='labels'> Password</label>
+            <label id="password" className='labels'>Password <label className='text-red-600'>*</label> </label>
             <input type='password' onChange={getPassword} value={password} placeholder="Password" required />
           </div>
           <div className="set">
@@ -80,11 +89,13 @@ function SignUp() {
             <input type='text' onChange={getTelephone} pattern="[0-9]+" value={telephone} placeholder="Telephone" required />
           </div>
           <button className='btn submit' type="submit">Sign Up</button>
-          <p className='para bottom-0'>All rights reserved 2022</p>
-                <p className='para bottom-6'>Already Have an Account <Link to='/login' className='text-blue-900'>Login</Link></p>
+          <p className='para text-[12px] bottom-0'>All rights reserved 2022</p>
+          <p className='para text-[14px] bottom-4'>Already Have an Account <Link to='/login' className='text-blue-900'>Login</Link></p>
       </form>
       </div>
     </div>
+    }
+    </>
   )
 }
 

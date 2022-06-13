@@ -11,6 +11,8 @@
     width: 80vw;
     background: white;
     margin: 0 auto;
+    height: 70vh;
+    overflow-y: scroll;
  }
 
 .fl-table {
@@ -146,10 +148,4 @@
     .submit-btn{
         font-size: 5px;
     }
-
-
-
-
-
-
 }
