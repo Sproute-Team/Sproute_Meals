@@ -1,7 +1,8 @@
 import React,{useEffect,useState} from "react";
 import './menuItems.css';
-import CreateNewDash from "./addItem";
 import Cookies from 'js-cookie'
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import CreateNewMenu from "./CreateNewMenu";
 
 const MenuItems = ()=>{
     const [menu,setMenu]=useState([]);
@@ -23,7 +24,7 @@ const MenuItems = ()=>{
     },[])
     return (
         <div className="menu_section">
-        <div className="menu" >
+        <div className="menu " >
         {menu.map((menu)=>(
             <div className="menu_1" key={menu.id}>
                 <div className="image">
@@ -37,10 +38,10 @@ const MenuItems = ()=>{
             </div>
         ))}
         </div>
-        <CreateNewDash/>
-          <div className='more'>
-            <button>More</button>
-            </div>
+        <CreateNewMenu/>
+          <div className=''>
+            <button className="btn btn-primary flex rounded-[8px] p-4 bg-[#FA4b0c] text-white">More<FaArrowRight className="m-1 p-[2px]"/></button>
+        </div>
         </div>
         
     )
