@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-import {FaPencilAlt, FaHamburger } from 'react-icons/fa'
+import {FaPencilAlt, FaHamburger, FaEllipsisV } from 'react-icons/fa'
 import Cookies from 'js-cookie'
 function ClientShowCase() {
     const [clients,setClients]=useState([])
@@ -21,7 +21,7 @@ function ClientShowCase() {
     },[])
   return (
       <>
-<div className="table-wrapper">
+<div className="table-wrapper relative">
     <table className="fl-table">
         <thead>
         <tr className="heads">
@@ -46,11 +46,18 @@ function ClientShowCase() {
             <td>$800,000-$1000,000</td>
             <td>{client.mobile}</td>
             <td><FaPencilAlt className='text-[#FA4B0C] cursor-pointer'/></td>    
-            <td><FaHamburger className='text-[#FA4B0C] cursor-pointer'/></td>        
+            <td><FaEllipsisV className='text-[#FA4B0C] cursor-pointer'/></td>        
         </tr>
         ))}
         </tbody>
     </table>
+    {/* <div className='bg-slate-800 absolute right-2'>
+        <ul>
+            <li>Update</li>
+            <li>Update</li>
+            <li>Details</li>
+        </ul>
+    </div> */}
 </div>
 </>
   )

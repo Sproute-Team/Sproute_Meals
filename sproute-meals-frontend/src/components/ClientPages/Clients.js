@@ -1,4 +1,4 @@
-import {FaSearch, FaEllipsisV ,FaPencilAlt} from "react-icons/fa";
+import React from 'react'
 import SideBar from '../order/Orders/SideBar';
 import ClientAdd from "./ClientAdd";
 import ClientHeader from "./ClientHeader";
@@ -8,7 +8,7 @@ const Clients = () => {
     return (
         <div className="flex bg-[#F7F8FC] w-full">
             <SideBar/>
-            <div className="block">
+            <div className="block ">
                 <ClientHeader/>
                 <ClientAdd/>
                 <ClientShowCase/>
